@@ -2,6 +2,8 @@ import { getEducation, createEducation, deleteEducation } from "@/app/actions";
 import { UserButton } from "@clerk/nextjs";
 import Link from "next/link";
 
+export const dynamic = 'force-dynamic';
+
 export default async function EducationAdmin() {
   const educations = await getEducation();
 

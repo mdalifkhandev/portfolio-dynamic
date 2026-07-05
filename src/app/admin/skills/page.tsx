@@ -3,6 +3,8 @@ import { UserButton } from "@clerk/nextjs";
 import Link from "next/link";
 import { SkillManager } from "./SkillManager";
 
+export const dynamic = 'force-dynamic';
+
 export default async function SkillsAdmin() {
   const skills = await getSkills();
 

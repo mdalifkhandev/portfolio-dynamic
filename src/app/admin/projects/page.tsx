@@ -3,6 +3,8 @@ import { UserButton } from "@clerk/nextjs";
 import Link from "next/link";
 import { SubmitButton } from "@/components/SubmitButton";
 
+export const dynamic = 'force-dynamic';
+
 export default async function ProjectsAdmin() {
   const projects = await getProjects();
 
